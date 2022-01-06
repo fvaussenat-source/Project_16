@@ -1,0 +1,1 @@
+/Users/fabricevaussenat/Desktop/python_Progs/Project_16/venv/bin/python3.10 /Users/fabricevaussenat/Desktop/python_Progs/Project_16/src/manage.py runserver
