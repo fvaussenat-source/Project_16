@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from devise.views import dashboard
+from devise.views import dashboard, redirect_home
 
 urlpatterns = [
-    path("days=<int:days_range>&currencies=<str:currencies>", dashboard),  # représente la page d'accueil.
+    path("", redirect_home),
+    path("days=<int:days_range>&currencies=<str:currencies>", dashboard, name='home'),  # représente la page d'accueil.
     path('admin/', admin.site.urls),
 ]
